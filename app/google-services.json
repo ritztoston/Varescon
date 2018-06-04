@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "967858225558",
+    "firebase_url": "https://varescon-186823.firebaseio.com",
+    "project_id": "varescon-186823",
+    "storage_bucket": "varescon-186823.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967858225558:android:d883273736575937",
+        "android_client_info": {
+          "package_name": "com.parse.starter.varescon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967858225558-08cf3nrutmni25m41lf68uca61ot6l7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parse.starter.varescon",
+            "certificate_hash": "df2f3504744fe4c01fca1d5236368e1993c35217"
+          }
+        },
+        {
+          "client_id": "967858225558-l27tf7st1j76u245d3on6ahr6c8918ni.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "967858225558-mk9gfk283p5hu8heoo1ligle2qimvabo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGPr0D0MSlodm9jqRfkXziJyPuSn6qKnI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967858225558-l27tf7st1j76u245d3on6ahr6c8918ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

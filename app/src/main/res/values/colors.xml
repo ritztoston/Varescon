@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#011627</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#011627</color>
+
+
+    //DIVIDER
+    <color name="dividerColor">#1F000000</color>
+
+
+    //SWITCH COLOR
+    <color name="baseReleaseColor">#212121</color>
+    <color name="basePressColor">#25d062</color>
+    <color name="ballReleaseColor">#FFFF</color>
+
+    //VARESCON BASE COLOR
+    <color name="bgcolor">#011627</color>
+    <color name="white">#FFFF</color>
+    <color name="red">#F71735</color>
+    <color name="gray">#484848</color>
+    <color name="blue">#416BC1</color>
+
+
+
+</resources>

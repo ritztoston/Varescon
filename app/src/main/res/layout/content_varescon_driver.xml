@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regularRideHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.parse.starter.varescon.VaresconDriverActivity"
+    tools:showIn="@layout/app_bar_varescon_driver">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mapHolderDriver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cardView"
+            android:layout_alignParentStart="true"
+            tools:context="com.parse.starter.varescon.DriverActivity" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+                android:id="@+id/location_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_release="@drawable/ic_off_location"
+                app:icon_press="@drawable/ic_on_location"
+                app:base_release_color="@color/baseReleaseColor"
+                app:base_press_color="@color/basePressColor"
+                app:ball_release_color="@color/ballReleaseColor"
+                app:ball_press_color="@color/white"
+                android:layout_gravity="center"
+
+
+                android:layout_margin="5dp"/>-->
+            <Button
+                android:id="@+id/walkinBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="OTS SERVICES"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_design"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"/>
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                android:id="@+id/location_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:ss_animationDuration="600"
+                app:ss_animationType="curved"
+                app:ss_iconPadding="18dp"
+                app:ss_iconSize="22dp"
+                app:ss_leftIcon="@mipmap/ic_off_location"
+                app:ss_leftText="Offline"
+                app:ss_rightIcon="@mipmap/ic_on_location"
+                app:ss_rightText="Online"
+                app:ss_selectedTextSize="14sp"
+                app:ss_sliderBackgroundColor="@color/red"
+                app:ss_switchColor="@color/bgcolor"
+                app:ss_textColor="@color/bgcolor"
+                app:ss_textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

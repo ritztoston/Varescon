@@ -1,0 +1,41 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.varescon.DriverTracking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/mapTracking"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnDropOffHere"
+            android:layout_below="@+id/cancelWalkin" />
+
+        <Button
+            android:id="@+id/cancelWalkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_button_design"
+            android:text="CANCEL"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDropOffHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gray_out_design"
+            android:text="DROP OFF HERE"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

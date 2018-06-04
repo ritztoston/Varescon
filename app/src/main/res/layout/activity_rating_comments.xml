@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.varescon.Helper.RatingComments">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Complete!"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/basePressColor"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please leave a rate or comment!"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/bgcolor"
+            android:textStyle="bold"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/comment"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Comment"
+            android:maxLines="10"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/bgcolor"
+            android:textColorHint="@color/bgcolor"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="@color/bgcolor"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/bgcolor"/>
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/Widget.MaterialRatingBar.RatingBar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnNotnow"
+            android:background="@drawable/register_button_design"
+            android:textColor="@color/white"
+            android:text="NOT NOW"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/btnSend"
+            android:background="@drawable/signin_button_design"
+            android:textColor="@color/white"
+            android:text="SEND"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

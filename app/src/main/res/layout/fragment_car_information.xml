@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout_settings"
+    tools:context="com.parse.starter.varescon.RiderProfileSettings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/addCarsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_design"
+            android:textColor="@color/white"
+            android:text="ADD CARS"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doneHeader"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:hint="Search"
+            android:textColor="@color/bgcolor"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:id="@+id/noResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/searchText"
+            android:layout_alignStart="@+id/searchText"
+            android:layout_below="@+id/searchText"
+            android:text="Empty records"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noResults"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/historyRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scrollbars="vertical">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="">
+        <item
+            android:id="@+id/adminOtp"
+            android:title="OTP SERVICES" />
+        <item
+            android:id="@+id/adminReports"
+            android:title="REPORTS" />
+        <item
+            android:id="@+id/adminTrip"
+            android:title="TRIP HISTORY" />
+        <item
+            android:id="@+id/adminDrivers"
+            android:title="DRIVERS" />
+        <item
+            android:id="@+id/adminCars"
+            android:title="CARS" />
+        <item
+            android:id="@+id/adminAdmin"
+            android:title="ADMINS" />
+        <item
+            android:id="@+id/adminSignout"
+            android:title="SIGN OUT" />
+
+    </item>
+
+</menu>

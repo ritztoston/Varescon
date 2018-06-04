@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/driver_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/driver_tripDetails"
+            android:title="TRIP DETAILS" />
+        <item
+            android:id="@+id/driver_reports"
+            android:title="REPORTS" />
+        <item
+            android:id="@+id/driver_settings"
+            android:title="SETTINGS" />
+        <item
+            android:id="@+id/driver_signOut"
+            android:title="SIGN OUT" />
+    </group>
+
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item android:title="">
+            <item
+            android:id="@+id/homeRider"
+            android:title="HOME" />
+            <item
+            android:id="@+id/reserveRider"
+            android:title="BOOK A TRIP" />
+            <item
+                android:id="@+id/tripHistory"
+                android:title="TRIP HISTORY" />
+            <item
+                android:id="@+id/settings"
+                android:title="SETTINGS" />
+            <item
+                android:id="@+id/signout"
+                android:title="SIGN OUT" />
+
+    </item>
+
+
+</menu>

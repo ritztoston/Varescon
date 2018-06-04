@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editPlate"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:hint="Plate"
+                android:inputType="text"
+                android:textColor="@color/bgcolor"
+                android:textColorHint="@color/bgcolor"
+                android:textSize="20sp"
+
+                app:met_baseColor="@color/bgcolor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/bgcolor"
+                app:met_singleLineEllipsis="true"
+                android:layout_marginRight="10dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editNo"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="Number"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:textColor="@color/bgcolor"
+                android:textColorHint="@color/bgcolor"
+                android:textSize="20sp"
+
+                app:met_baseColor="@color/bgcolor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/bgcolor"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:orientation="horizontal"
+            android:background="@color/bgcolor">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/selectCarType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Car type"
+                android:textColor="@color/bgcolor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:orientation="horizontal"
+            android:background="@color/bgcolor">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/selectStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Car status"
+                android:textColor="@color/bgcolor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

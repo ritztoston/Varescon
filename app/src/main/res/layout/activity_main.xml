@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context="com.parse.starter.varescon.MainActivity">
+
+    <ImageView
+        android:id="@+id/formLogo"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/varesconlogo"
+        android:layout_above="@+id/varesconText"/>
+
+    <TextView
+        android:id="@+id/varesconText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Varescon E-Hailing Transport Services"
+        android:textColor="@color/bgcolor"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btnSign"
+                android:background="@drawable/signin_button_design"
+                android:textColor="@color/white"
+                android:text="SIGN IN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btnReg"
+                android:background="@drawable/register_button_design"
+                android:textColor="@color/white"
+                android:text="REGISTER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+</RelativeLayout>
